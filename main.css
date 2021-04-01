@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+}
+
+#product-overview {
+    background: url("freedom.jpg");
+    background-color: red;
+    width: 100%;
+    height: 520px;
+    padding: 10px;
+}
+
+.section-title {
+    color: green;
+    text-align: center;
+}
+
+#product-overview h1 {
+    color: white;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.plan {
+    background: lightgreen;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.plan__annotation {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.514);
+    color: green;
+    background: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+    width: auto;
+}
+
+.plan__annotation:hover {
+    background: purple;
+}
+
+.plan__title {
+    color: rgb(112, 52, 161);
+}
+.plan__price {
+    color: Gray;
+}
+
+.plan--highlighted .plan__price {
+    color: greenyellow;
+}
+
+.plan--highlighted .plan__title {
+    color: white;
+}
+
+.plan__features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* this is also viable for editing the list items in the Ul  */
+
+.plan__features li {
+}
+
+.plan__feature {
+    margin: 8px 0;
+}
+
+.plan--highlighted {
+    background: green;
+    color: white;
+    box-shadow: 8px 10px 6px 6px gray;
+}
+
+.button {
+    background: rgb(3, 53, 3);
+    color: white;
+    font: inherit;
+    border-radius: 5px;
+    border: 2px solid none;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button:hover,
+.button:active {
+    color: rgb(3, 53, 3);
+    background: white;
+}
+
+.button:focus {
+    /* outline: none; */
+}
+
+#key-features {
+    background: rgb(206, 136, 206);
+    margin: 80px;
+    padding: 16px;
+}
+
+#key-features .section-title {
+    color: white;
+    margin: 32px;
+}
+
+.key-feature__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.key-feature {
+    display: inline-block;
+    width: 30%;
+}
+
+.key-feature__description {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+.main-header {
+    background-color: green;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+.main-header__brand a {
+    color: black;
+}
+
+.main-header__brand a:hover {
+    color: white;
+}
+
+.main-nav {
+    display: inline-block;
+    width: calc(100% - 80px);
+    text-align: right;
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.main-nav a {
+    color: purple;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 2px solid;
+}
+
+.main-nav__item--cta a {
+    color: white;
+    background: hotpink;
+    padding: 6px 16px;
+    border-radius: 10px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    color: hotpink;
+    background: white;
+    border: none;
+}
