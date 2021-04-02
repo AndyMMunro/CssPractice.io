@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+}
+
+.main-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: green;
+    padding: 8px 16px;
+    z-index: 1;
+}
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+.main-header__brand a {
+    color: black;
+}
+
+.main-header__brand a:hover {
+    color: white;
+}
+
+.main-nav {
+    display: inline-block;
+    width: calc(100% - 80px);
+    text-align: right;
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.main-nav a {
+    color: purple;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 2px solid;
+}
+
+.main-nav__item--cta a {
+    color: white;
+    background: hotpink;
+    padding: 6px 16px;
+    border-radius: 10px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    color: hotpink;
+    background: white;
+    border: none;
+}
+
+.main-footer {
+    background: black;
+    padding: 36px;
+    margin-top: 48px;
+}
+
+.main-footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-footer__link {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-footer__link a {
+    color: white;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    color: lightgray;
+}
+.button {
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background-color: #23570f;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+}
+.button:hover,
+.button:active {
+    color: 23570f;
+    background: white;
+}
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+.ripple:hover {
+    background: #2e6e15 radial-gradient(circle, transparent 1%, #16f559 1%)
+        center/15000%;
+}
+.ripple:active {
+    background-color: #23570f;
+    background-size: 100%;
+    transition: background 0s;
+}

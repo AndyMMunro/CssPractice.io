@@ -1,0 +1,84 @@
+main {
+    padding-top: 40px;
+}
+
+.background {
+    background: url("../images/plans-background.jpg");
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.packages {
+    width: 80%;
+    margin: 16px 5px;
+    border: 2px solid black;
+    position: relative;
+}
+
+.packages:hover,
+.packages:active {
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+    border: black;
+}
+
+.packages a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 32px;
+}
+
+/* absolute elements bind to the nearest ancestor with a position property */
+.package__badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    font-weight: bold;
+    color: white;
+    background: darkred;
+    padding: 10px;
+}
+
+.package-promo {
+    color: #7d1692;
+}
+
+.package-description {
+    padding: 16px;
+    border: 2px solid black;
+    color: black;
+    background: white;
+    font-size: 20px;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+#plus-plan {
+    background: rgb(144, 238, 144, 0.8);
+}
+
+#free-plan {
+    background: rgb(71, 204, 71, 0.8);
+    float: right;
+    text-align: right;
+}
+#premium-plan {
+    background: rgb(0, 128, 0, 0.8);
+}
+
+#premium-plan .package-title {
+    color: white;
+}
+
+/* float is great for in text elements to make the text move around the image
+clear: both; will sove the issyer in  */
+
+/* relative is based on its position to the where it current lies  */
+
+/* overflow hidden will hide any elements outside of there parent element 
+*/
