@@ -2,8 +2,18 @@
     box-sizing: border-box;
 }
 body {
-    font-family: "Courier New", Courier, monospace;
     margin: 0;
+}
+
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .main-header {
@@ -12,7 +22,7 @@ body {
     top: 0;
     left: 0;
     background-color: green;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     z-index: 1;
 }
 
@@ -21,12 +31,8 @@ body {
     vertical-align: middle;
 }
 
-.main-header__brand {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 22px;
-    vertical-align: middle;
+.main-header__brand img {
+    height: 1.2rem;
 }
 
 .main-header__brand a {
@@ -52,7 +58,7 @@ body {
 
 .main-nav__item {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 1rem;
 }
 
 .main-nav a {
@@ -70,7 +76,7 @@ body {
 .main-nav__item--cta a {
     color: white;
     background: hotpink;
-    padding: 6px 16px;
+    padding: 0.5rem 1rem;
     border-radius: 10px;
 }
 
@@ -83,8 +89,8 @@ body {
 
 .main-footer {
     background: black;
-    padding: 36px;
-    margin-top: 48px;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 
 .main-footer__links {
@@ -96,7 +102,7 @@ body {
 
 .main-footer__link {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .main-footer__link a {
@@ -110,8 +116,8 @@ body {
 .button {
     border: none;
     border-radius: 2px;
-    padding: 12px 18px;
-    font-size: 16px;
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     cursor: pointer;
     color: white;
@@ -139,3 +145,26 @@ body {
     background-size: 100%;
     transition: background 0s;
 }
+
+/* float is great for in text elements to make the text move around the image
+clear: both; will sove the issyer in  */
+
+/* relative is based on its position to the where it lies by default in its
+parent element */
+
+/* overflow hidden will hide any elements outside of there parent element 
+*/
+
+/* absolute elements include the padding when it comes to percentages */
+
+/* border box sizing includes padding */
+
+/* fixed positioning is relative to the view port */
+
+/* em units multiply as they move through the page flow  */
+
+/* rem does not compound like em but is based on the browser 
+standard of 16px Primary thing is that it makes the page dynamic  */
+
+/* vw in the sizing width and heigh component cause scroll bars to appear a 
+plan percentage will eliminate this issue */
